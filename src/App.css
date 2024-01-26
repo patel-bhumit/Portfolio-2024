@@ -1,8 +1,14 @@
 * {
   font-family: 'Pixelify Sans', sans-serif;
+  user-select: none;
 }
 
 
+.page{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 
 .nav {
   height: 90vh;
@@ -58,4 +64,42 @@
   background: transparent;
   width: 100%;
   transition: 0s;
+}
+
+.intro-msg{
+  align-items: center;
+  padding-left: 10rem;
+  font-size: 7em;
+}
+
+.canvas{
+  position: relative;
+  z-index: 0;
+  object-fit: contain;
+  height: 100vh;
+}
+
+.foreground {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  top: 0;
+  left: 0;
+  align-items: stretch;
+  width: 100%;
+}
+
+#about{
+  height: 100vh;
+}
+
+.circle{
+  user-select: none;
+  z-index: +1;
+  position: fixed;
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 20px;
+  top: 0;
+  left: 0;
 }
