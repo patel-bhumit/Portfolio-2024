@@ -1,9 +1,8 @@
 import './App.css';
-import Navbar from './components/navbar';
-import Home from './components/home'
-import About from './components/about'
-import { animate, motion, useMotionValue } from "framer-motion"
-import { useCursor } from '@react-three/drei';
+import Navbar from './components/Navbar/navbar';
+import Home from './layouts/Home/home'
+import About from './layouts/About/about'
+import { motion } from "framer-motion"
 import { useEffect, useState } from 'react';
 
 function App() {
@@ -12,7 +11,6 @@ function App() {
     x: 0,
     y: 0
   });
-  console.log(mousePosition);
 
   useEffect(() => {
     const mouseMove = (e) => {
@@ -36,19 +34,19 @@ function App() {
     }
   }
   
-
-    
-
   return (
-    <div className='page'>
+    <div className='flex flex-row'>
       <motion.div className='circle' 
        variants={variants}
        animate="default"
-       transition={{type: "Inertia"}}
+       transition={{type: "tween" }}
       />
-      
-    <Navbar />
-      <div className='foreground'>
+
+      <div className='fixed top-0 ml-10'>
+        <Navbar />
+      </div>
+
+      <div className='flex flex-col ml-40'> 
         <Home />
         <About/>
       </div>

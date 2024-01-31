@@ -1,5 +1,5 @@
-import '../App.css';
-import logo from '../asset/logo-white.png'
+import './navbar.css';
+import logo from '..//..//asset/logo-white.png'
 
 function navbar() {
     return (
