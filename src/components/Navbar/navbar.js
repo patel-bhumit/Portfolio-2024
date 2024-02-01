@@ -3,7 +3,7 @@ import logo from '..//..//asset/logo-white.png'
 
 function navbar() {
     return (
-        <div>
+        <div className='hidden md:block'>
             <ul className='nav'>
                 <li><img className='logo' src={logo}/></li>
                 <li className='navlist'>Home</li>

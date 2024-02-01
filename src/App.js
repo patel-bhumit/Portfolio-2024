@@ -42,11 +42,11 @@ function App() {
        transition={{type: "tween" }}
       />
 
-      <div className='fixed top-0 ml-10'>
+      <div className='fixed top-0 ml-0 md:ml-10'>
         <Navbar />
       </div>
 
-      <div className='flex flex-col ml-40'> 
+      <div className='flex flex-col w-full xl:justify-start sm:justify-center md:ml-40'> 
         <Home />
         <About/>
       </div>
