@@ -1,11 +1,8 @@
 
 .nav {
-    height: 90vh;
     display: flex;
     list-style: none;
-    justify-content: center;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
   }
   
   .logo{
@@ -19,7 +16,6 @@
     font-size: x-large;
     margin-top: 8rem;
     padding: 0px 0px 10px 0px;
-    rotate: -90deg;
   }
   
   .navlist:before, .navlist:after{

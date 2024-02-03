@@ -1,18 +1,46 @@
 import './navbar.css';
 import logo from '..//..//asset/logo-white.png'
+import { useState } from 'react';
 
-function navbar() {
+const navItems = [
+    "Home",
+    "Projects",
+    "About",
+    "Contact"
+]
+
+
+
+function NavbarItem() {
     return (
-        <div className='hidden md:block'>
-            <ul className='nav'>
-                <li><img className='logo' src={logo}/></li>
-                <li className='navlist'>Home</li>
-                <li className='navlist'>About</li>
-                <li className='navlist'>Experince</li>
-                <li className='navlist'>Contact</li>
+        <div className='flex justify-between'>
+            <img className='h-14 items-center m-6' src={logo}/>
+            <ul className='flex items-center m-10'>
+            {navItems.map((Item, index) => {
+                return(
+                <li key={index}
+                className="relative text-2xl w-fit block after:block after:content-[''] 
+                after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 
+                after:hover:scale-x-100 after:transition after:duration-300 after:origin-center
+                ml-16
+                "
+                >
+                    {Item}
+                </li>
+                )
+            })}
             </ul>
         </div>
-    )
+    );  
 }
 
-export default navbar;
+function Navbar(){
+
+    return(
+    <div className='navbar hidden lg:block'>
+        <NavbarItem/>
+    </div>
+    );
+}
+
+export default Navbar;

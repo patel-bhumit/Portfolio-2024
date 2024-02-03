@@ -1,9 +1,12 @@
 * {
-  font-family: 'Pixelify Sans', sans-serif;
+  font-family:  'Playfair Display', 'sans-serif';
   user-select: none;
   pointer-events: 'none'
 }
 
+.font{
+  font-family: 'Protest Revolution', 'sans-serif';
+}
 
 .page{
   display: flex;

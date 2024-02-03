@@ -1,4 +1,4 @@
-import { color } from 'framer-motion';
+
 import './about.css'
 
 function about() {
