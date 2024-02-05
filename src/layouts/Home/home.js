@@ -3,7 +3,7 @@ import { motion, buttonVariants, iconVariants } from "framer-motion"
 
 function home(props) {
     return(
-        <div id='home' className='h-3/4 sm:h-screen m-8'>
+        <div id='home' className='h-full sm:h-full md:h-full lg:h-3/4 m-8 '>
             <div className='flex flex-col'>
                 <h4 className='text-4xl sm:text-6xl md:text-6xl xl:text-8xl font'>{props.name}</h4>
                 <h1 className="text-2xl sm:text-4xl md:text-4xl xl:text-4xl font">
