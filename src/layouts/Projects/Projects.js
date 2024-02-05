@@ -34,6 +34,8 @@ const ProjectsList = [
     }
 ];
 
+
+
 function ProjectCards() {
     return (
         <div className="container my-24 mx-auto p-2 md:px-6">
@@ -58,10 +60,10 @@ function ProjectCard({ project }) {
     return (
         <motion.div
             ref={ref}
-            initial={{ opacity: 0 }}
-            animate={{ x: inView ? 0 : 100, opacity: inView ? 1 : 0 }}
-            transition={{ type: 'spring', stiffness: 50, duration: 0.5, ease: "easeInOut", bounce: 0.5 }}
-            className="mb-12 lg:mb-0"
+            initial={{ scale: 0 }}
+            animate={{ scale: inView ? 1 : 0 }}
+            transition={{ type: 'spring', stiffness: 50, duration: 1, ease: "easeInOut", bounce: 0.5 }}
+            className="mb-12 lg:mb-0 md:pl-20"
         >
             <div>
                 <div className="relative mb-6 overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20 bg-[50%]" data-te-ripple-init data-te-ripple-color="light">

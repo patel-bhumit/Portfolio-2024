@@ -5,6 +5,7 @@ import About from './layouts/About/about'
 import { motion } from "framer-motion"
 import { useEffect, useState } from 'react';
 import Projects from './layouts/Projects/Projects';
+import Social from './components/Socials/Social';
 
 function App() {
   
@@ -37,6 +38,7 @@ function App() {
   
   return (
     <div className='flex flex-row '>
+      <Social/>
       <motion.div className='circle' 
        variants={variants}
        animate="default"

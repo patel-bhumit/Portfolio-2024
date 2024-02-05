@@ -1,11 +1,11 @@
 * {
-  font-family:  'Playfair Display', 'sans-serif';
+  font-family: 'SF Mono','Fira Code','Fira Mono','Roboto Mono',monospace; 
   user-select: none;
   pointer-events: 'none'
 }
 
 .font{
-  font-family: 'Protest Revolution', 'sans-serif';
+  font-family: 'SF Mono','Fira Code','Fira Mono','Roboto Mono',monospace; 
 }
 
 .page{
