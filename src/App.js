@@ -37,9 +37,9 @@ function App() {
   }
   
   return (
-    <div className='flex flex-row '>
+    <div className='flex flex-row bg-slate-900'>
       <Social/>
-      <motion.div className='circle' 
+      <motion.div className='hidden lg:block circle transform-gpu' 
        variants={variants}
        animate="default"
        transition={{type: "tween" }}
@@ -55,8 +55,13 @@ function App() {
             discription="Experienced software developer passionate about create efficient and scalable applications."
           />
         </div>
-        <Projects className='h-screen'/>
-        <About/>
+        <section id='about' className='h-max lg:h-screen'>
+          <About/>
+        </section>
+        <section id='projects' className='h-fit'>
+        <Projects/>
+        </section>
+        <p className='flex w-full justify-center pb-10'>&copy; 2024 Bhumit. All rights reserved.</p>
       </div>
     </div>
   );
