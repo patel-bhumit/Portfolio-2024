@@ -14,7 +14,7 @@ function home(props) {
                 <h1 className="text-2xl sm:text-4xl md:text-4xl xl:text-4xl font">
                     {props.role}
                 </h1>
-                <p className='text-lg mt-3 font'>{props.discription}</p>
+                <p className='text-base mt-3 font'>{props.discription}</p>
                 <motion.button className='mt-5 bg-cyan-900'
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}

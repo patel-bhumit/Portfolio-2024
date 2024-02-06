@@ -6,8 +6,7 @@ import { motion } from 'framer-motion';
 const navItems = [
     "Home",
     "Projects",
-    "About",
-    "Contact"
+    "About", 
 ]
 
 
@@ -24,7 +23,7 @@ function NavbarItem() {
             {navItems.map((Item, index) => {
                 return(
                 <li key={index}
-                className="relative text-2xl w-fit block after:block after:content-[''] 
+                className="relative text-base w-fit block after:block after:content-[''] 
                 after:absolute after:h-[3px] after:bg-cyan-500 after:w-full after:scale-x-0 
                 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center
                 ml-16

@@ -39,7 +39,7 @@ function Social(){
             animate={{ y: 0, opacity: 1}}
             transition={{ type: 'tween', stiffness: 50, duration: 1, ease: "easeInOut", delay: 0.5 }}
             className="hidden lg:flex md:fixed justify-end flex-col h-screen items-center pr-7 end-0">
-                <p className="rotate-90 w-10 mb-40">bhumit667@gmail.com</p>
+                <a href="mailto:bhumit667@gmail.com" className="rotate-90 w-10 mb-40">bhumit667@gmail.com</a>
                 <div className="h-1/6 bg-cyan-500 w-1"></div>
             </motion.div>
         </div>
