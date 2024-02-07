@@ -46,7 +46,7 @@ function App() {
       />
 
         
-      <div className='flex flex-col w-full font'> 
+      <div className='flex flex-col w-full font '> 
         <div className='h-screen'>
           <Navbar/>
           <Home 
@@ -55,13 +55,9 @@ function App() {
             discription="Experienced software developer passionate about create efficient and scalable applications."
           />
         </div>
-        <section id='about' className='h-max lg:h-screen'>
           <About/>
-        </section>
-        <section id='projects' className='h-fit'>
-        <Projects/>
-        </section>
-        <p className='flex w-full justify-center pb-10'>&copy; 2024 Bhumit. All rights reserved.</p>
+          <Projects/>
+        <p className='flex w-full justify-center'>&copy; 2024 Bhumit. All rights reserved.</p>
       </div>
     </div>
   );

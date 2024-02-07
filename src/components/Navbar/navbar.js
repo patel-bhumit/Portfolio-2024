@@ -22,7 +22,7 @@ function NavbarItem() {
             <ul className='flex items-center m-10'>
             {navItems.map((Item, index) => {
                 return(
-                <li key={index}
+                <li key={index} href={`#${Item}`}
                 className="relative text-base w-fit block after:block after:content-[''] 
                 after:absolute after:h-[3px] after:bg-cyan-500 after:w-full after:scale-x-0 
                 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center

@@ -4,7 +4,7 @@ import { motion, buttonVariants, iconVariants } from "framer-motion"
 function home(props) {
     return(
         <div 
-        id='home' className='h-full sm:h-full md:h-full lg:h-3/4 m-8 '>
+        id='home' className='h-full sm:h-full md:h-full lg:h-3/4 m-8 p-8'>
             <motion.div
             initial={{ x: -100, opacity: 0}}
             animate={{ x: 0, opacity: 1}}
@@ -15,7 +15,7 @@ function home(props) {
                     {props.role}
                 </h1>
                 <p className='text-base mt-3 font'>{props.discription}</p>
-                <motion.button className='mt-5 bg-cyan-900'
+                <motion.button className='mt-10 bg-transparent border-solid border border-cyan-500 rounded-none hover:bg-cyan-500'
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
                 >Resume</motion.button>

@@ -28,7 +28,7 @@ const ProjectsList = [
 
 function ProjectCards() {
     return (
-        <div className="container my-24 mx-auto p-2 md:px-6 align-middle">
+        <div className="container py-24 mx-auto p-2 md:px-6 align-middle h-max lg:h-screen">
             <section className=" text-center lg:text-left">
                 <h2 className="mb-12 text-center text-3xl font-bold">Projects</h2>
                 <div className="grid p-5 gap-x-6 lg:grid-cols-3">
@@ -45,7 +45,7 @@ function ProjectCards() {
 
 function ProjectCard({ project }) {
     const ref = useRef(null);
-    const inView = useInView(ref);
+    const inView = useInView(ref, {once: true});
 
     return (
         <motion.div
@@ -53,7 +53,7 @@ function ProjectCard({ project }) {
             initial={{ scale: 0 }}
             animate={{ scale: inView ? 1 : 0 }}
             transition={{ type: 'spring', stiffness: 50, duration: 1, ease: "easeInOut", bounce: 0.5 }}
-            className="mb-12 lg:mb-14 p-5 md:p-10 backdrop-blur-3xl bg-slate-800 bg-transparent shadow-xl align-middle"
+            className="mb-12 lg:mb-14 p-5 md:p-10 backdrop-blur-sm bg-cyan-950 shadow-2xl align-middle"
         >
             <div>
                 <div className="relative mb-6 overflow-hidden rounded-lg" data-te-ripple-init data-te-ripple-color="light">
@@ -75,7 +75,7 @@ function ProjectCard({ project }) {
 
 function Projects() {
     return (
-        <div className="Projects h-max align-middle">
+        <div>
             <ProjectCards/>
         </div>
     );
