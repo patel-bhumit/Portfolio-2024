@@ -6,6 +6,25 @@ import { motion } from "framer-motion"
 import { useEffect, useState } from 'react';
 import Projects from './layouts/Projects/Projects';
 import Social from './components/Socials/Social';
+import svg1 from "./asset/linkedin.svg"
+import svg2 from "./asset/github.svg" 
+
+const Socials = [
+    {
+        id: 1,
+        name: "LinkedIn",
+        link: "https://www.linkedin.com/in/bhumitkumar-patel/",
+        icon: svg1
+    },
+    {
+        id: 2,
+        name: "GitHub",
+        link: "https://github.com/patel-bhumit",
+        icon: svg2
+    },
+    
+];
+
 
 function App() {
   
@@ -57,7 +76,19 @@ function App() {
         </div>
           <About/>
           <Projects/>
-        <p className='flex w-full justify-center'>&copy; 2024 Bhumit. All rights reserved.</p>
+          <footer>
+            <div className='flex justify-center items-center lg:hidden'>
+            {Socials.map((social, index) => {
+              return (
+                <a href={social.link} className="pr-4 pb-2" key={index}>
+                                  <img src={social.icon} alt={`Social icon ${index}`} />
+                          </a>
+                      );
+                    })}
+              </div>
+              <a href="mailto:bhumit667@gmail.com" className="flex justify-center pb-2 lg:hidden">bhumit667@gmail.com</a>
+            <p className='flex w-full justify-center pb-5'>&copy; 2024 Bhumit. All rights reserved.</p>
+          </footer>
       </div>
     </div>
   );

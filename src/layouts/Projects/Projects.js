@@ -2,25 +2,26 @@ import { motion, useInView, useMotionValue } from 'framer-motion';
 import './Projects.css';
 import { useRef, useState } from 'react';
 import icon from '../../asset/folder.svg';
+import tool from '../../asset/tool.svg';
 
 const ProjectsList = [
     {
         name: "Transportation Management System",
         description: "Designed and developed a robust Transportation Management System (TMS) using WPF, Entity Framework,and MySQL.",
-        technologies: ["C#", "SQL", ".NET Framework"],
+        technologies: ["C#", "SQL", ".NET Framework", "WPF"],
         link: "https://github.com/patel-bhumit/TermProject"
     },
     {
         name: "AI Helper",
         description: "Developed an AI assistant to help users to summerize daily tasks using React, Firebase, and Palm AI.",
         technologies: ["React", "Firebase", "Palm AI"],
-        link: "github.com"
+        link: "https://github.com/patel-bhumit/ai_helper"
     },
     {
-        name: "Portfolio Website",
-        description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        technologies: ["HTML", "CSS", "JavaScript"],
-        link: "github.com"
+        name: "Sorting Visualizer",
+        description: "Developing a web application to visualize sorting algorithms using React.js, CSS, and JavaScript.",
+        technologies: ["HTML", "CSS", "JavaScript", "In Progress"],
+        link: "github.comhttps://github.com/patel-bhumit"
     }
 ];
 
@@ -28,7 +29,7 @@ const ProjectsList = [
 
 function ProjectCards() {
     return (
-        <div className="container py-24 mx-auto p-2 md:px-6 align-middle h-max lg:h-screen">
+        <div className="container py-24 mx-auto p-2 md:px-8 align-middle h-max lg:h-screen">
             <section className=" text-center lg:text-left">
                 <h2 className="mb-12 text-center text-3xl font-bold">Projects</h2>
                 <div className="grid p-5 gap-x-6 lg:grid-cols-3">
@@ -66,7 +67,8 @@ function ProjectCard({ project }) {
                     ))}
                 </div>
                 <p className="text-cyan-300">{project.description}</p>
-                <a href={project.link} className="mt-4 text-primary-500 dark:text-primary-400 hover:underline">View Project</a>
+                <br/>
+                <a href={project.link} className="mt-4 text-cyan-100 hover:underline">View Project</a>
             </div>
         </motion.div>
     );
