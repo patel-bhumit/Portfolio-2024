@@ -1,8 +1,7 @@
-import { motion, useInView, useMotionValue } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 import './Projects.css';
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 import icon from '../../asset/folder.svg';
-import tool from '../../asset/tool.svg';
 
 const ProjectsList = [
     {
@@ -20,7 +19,7 @@ const ProjectsList = [
     {
         name: "Sorting Visualizer",
         description: "Developing a web application to visualize sorting algorithms using React.js, CSS, and JavaScript.",
-        technologies: ["HTML", "CSS", "JavaScript", "In Progress"],
+        technologies: ["React.js", "In Progress"],
         link: "github.comhttps://github.com/patel-bhumit"
     }
 ];
@@ -32,7 +31,7 @@ function ProjectCards() {
         <div className="container py-24 mx-auto p-2 md:px-8 align-middle h-max lg:h-screen">
             <section className=" text-center lg:text-left">
                 <h2 className="mb-12 text-center text-3xl font-bold">Projects</h2>
-                <div className="grid p-5 gap-x-6 lg:grid-cols-3">
+                <div className="grid p-5 gap-x-6 lg:grid-cols-3 justify-center">
                     {ProjectsList.map((project, index) => {
                         return (
                             <ProjectCard key={index} project={project} />
@@ -58,17 +57,17 @@ function ProjectCard({ project }) {
         >
             <div>
                 <div className="relative mb-6 overflow-hidden rounded-lg" data-te-ripple-init data-te-ripple-color="light">
-                    <img src={icon} alt="Project Image" className="size-8 object-cover fill-cyan-500" style={{color: '#06b6d4'}} />
+                    <img src={icon} alt={"Icon" + project}  className="size-8 object-cover fill-cyan-500" style={{color: '#06b6d4'}} />
                 </div>
                 <h5 className="mb-4 text-lg font-bold">{project.name}</h5>
-                <div className="mb-4 flex items-center justify-center text-sm font-medium text-danger dark:text-danger-500 lg:justify-start">
+                <div className="mb-4 flex flex-wrap items-center justify-center text-sm font-medium text-danger dark:text-danger-500 lg:justify-start">
                     {project.technologies.map((technology, index) => (
                         <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium border border-gray-200 bg-white text-gray-800 shadow-sm dark:bg-slate-900 dark:border-gray-700 dark:text-white mr-4" key={index}>{technology}</span>
                     ))}
                 </div>
                 <p className="text-cyan-300">{project.description}</p>
                 <br/>
-                <a href={project.link} className="mt-4 text-cyan-100 hover:underline">View Project</a>
+                <a href={project.link} className="mt-4 text-cyan-400 hover:underline">View Project</a>
             </div>
         </motion.div>
     );

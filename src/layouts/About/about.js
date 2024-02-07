@@ -23,7 +23,7 @@ function AboutSection() {
         transition={{ type: 'spring', stiffness: 50, duration: 1, ease: "easeInOut", bounce: 0.5 }}
         id='about' className='flex flex-col h-max lg:h-screen justify-center items-center'>
                 <h2 className="text-center text-3xl font-bold">About</h2><div className='w-fit h-1 fill-cyan-500' />
-                <div className='flex flex-col lg:flex-row w-full sm:w-4/5 md:w-4/5 lg:w-3/5  p-9'>
+                <div className='flex flex-col lg:flex-row w-full sm:w-4/5 md:w-4/5 lg:w-4/5  p-9'>
                     <div className='pr-0 lg:pr-10'>
                     {aboutData.map((data, index) => {
                         return (
@@ -41,7 +41,7 @@ function AboutSection() {
                         })}
                     </ul>
                     </div>
-                <img src={image} className='w-3/5 h-3/5 md:w-2/4 md:h-2/4 lg:w-2/5 lg:h-2/4 mt-5 rounded-sm self-center'/>
+                <img src={image} alt="Bhumit Patel" className='w-3/5 h-3/5 md:w-2/4 md:h-2/4 lg:w-2/5 lg:h-2/4 mt-5 rounded-sm self-center'/>
                 </div>
         </motion.div>
     )

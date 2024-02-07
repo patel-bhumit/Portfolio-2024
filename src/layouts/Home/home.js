@@ -1,5 +1,11 @@
 import './home.css'
-import { motion, buttonVariants, iconVariants } from "framer-motion"
+import { motion } from "framer-motion"
+
+function DownloadResume(){
+   //download resume from local storage
+    const resume = require('../../asset/BhumitPatel_Resume.pdf');
+    window.open(resume);
+}
 
 function home(props) {
     return(
@@ -18,6 +24,7 @@ function home(props) {
                 <motion.button className='mt-10 bg-transparent border-solid border border-cyan-500 rounded-none hover:bg-cyan-500'
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
+                    onClick={DownloadResume}
                 >Resume</motion.button>
             </motion.div>
         </div>
