@@ -6,8 +6,8 @@ import { motion } from "framer-motion"
 import { useEffect, useState } from 'react';
 import Projects from './layouts/Projects/Projects';
 import Social from './components/Socials/Social';
-import svg1 from "./asset/linkedin.svg"
-import svg2 from "./asset/github.svg" 
+import svg1 from "./asset/linkedin.svg";
+import svg2 from "./asset/github.svg";
 
 const Socials = [
     {
@@ -58,14 +58,14 @@ function App() {
   return (
     <div className='flex flex-row bg-slate-900'>
       <Social/>
-      <motion.div className='hidden lg:block circle transform-gpu' 
+      <motion.div className='hidden lg:block circle' 
        variants={variants}
        animate="default"
        transition={{type: "tween" }}
       />
 
         
-      <div className='flex flex-col w-full font '> 
+      <section className='flex flex-col w-full font '> 
         <div className='h-screen'>
           <Navbar/>
           <Home 
@@ -89,7 +89,7 @@ function App() {
               <a href="mailto:bhumit667@gmail.com" className="flex justify-center pb-2 lg:hidden">bhumit667@gmail.com</a>
             <p className='flex w-full justify-center pb-5'>&copy; 2024 Bhumit. All rights reserved.</p>
           </footer>
-      </div>
+      </section>
     </div>
   );
 }

@@ -45,7 +45,7 @@ function ProjectCards() {
 
 function ProjectCard({ project }) {
     const ref = useRef(null);
-    const inView = useInView(ref, {once: true});
+    const inView = useInView(ref);
 
     return (
         <motion.div
@@ -76,7 +76,7 @@ function ProjectCard({ project }) {
 
 function Projects() {
     return (
-        <div>
+        <div id='projects'>
             <ProjectCards/>
         </div>
     );
