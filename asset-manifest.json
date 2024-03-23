@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.05622f94.css",
-    "main.js": "/static/js/main.2e466b88.js",
+    "main.js": "/static/js/main.890f95af.js",
     "static/media/IMG_2716.JPG": "/static/media/IMG_2716.fcff5176fc7bc9951716.JPG",
-    "static/media/BhumitPatel_Resume.pdf": "/static/media/BhumitPatel_Resume.45b58aeb53252b8dfd92.pdf",
+    "static/media/BhumitPatel_Resume.pdf": "/static/media/BhumitPatel_Resume.5085c953971f382bb10e.pdf",
     "static/media/logo-white.png": "/static/media/logo-white.ae74aae2e41ae6758197.png",
     "index.html": "/index.html",
     "static/media/github.svg": "/static/media/github.7e600c267ff4871d5a866e19ee264292.svg",
     "static/media/linkedin.svg": "/static/media/linkedin.686f3a7d401f9d6146003a6df5600ffa.svg",
     "static/media/folder.svg": "/static/media/folder.a7c9377008571f0a6a8e75a30dd45f92.svg",
     "main.05622f94.css.map": "/static/css/main.05622f94.css.map",
-    "main.2e466b88.js.map": "/static/js/main.2e466b88.js.map"
+    "main.890f95af.js.map": "/static/js/main.890f95af.js.map"
   },
   "entrypoints": [
     "static/css/main.05622f94.css",
-    "static/js/main.2e466b88.js"
+    "static/js/main.890f95af.js"
   ]
 }
