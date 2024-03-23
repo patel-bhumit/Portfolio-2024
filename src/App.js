@@ -71,7 +71,7 @@ function App() {
           <Home 
             name="Bhumit Patel"
             role="Software Developer"
-            discription="Experienced software developer passionate about create efficient and scalable applications."
+            discription="Experienced software developer passionate about creating efficient and scalable applications."
           />
         </div>
           <About/>
