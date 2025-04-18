@@ -2,7 +2,7 @@
   "homepage": "https://patel-bhumit.github.io/Portfolio-2024",
   "name": "portfolio",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@react-three/cannon": "^6.6.0",
     "@react-three/drei": "^9.96.1",
